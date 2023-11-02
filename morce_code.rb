@@ -13,3 +13,7 @@ def decode_morse_char(morse_char)
   MORSE_CODE[morse_char]
 end
 
+# Function to decode an entire word in Morse code
+def decode_morse_word(morse_word)
+  morse_word.split.map { |char| decode_morse_char(char) }.join
+end
