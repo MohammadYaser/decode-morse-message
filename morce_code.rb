@@ -7,3 +7,9 @@ MORSE_CODE_MSG = {
   '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
   '-.--' => 'Y', '--..' => 'Z'
 }.freeze
+
+# Function to decode a Morse code character
+def decode_morse_char(morse_char)
+  MORSE_CODE[morse_char]
+end
+
